@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 
-
 class CustomSecondaryButton extends StatelessWidget {
   final String text;
   final VoidCallback? onPressed;
 
-  const CustomSecondaryButton({Key? key, required this.text, this.onPressed})
-    : super(key: key);
+  const CustomSecondaryButton({super.key, required this.text, this.onPressed});
 
   @override
   Widget build(BuildContext context) {
