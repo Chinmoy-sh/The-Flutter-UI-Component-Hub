@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_components_hub/Flutter_UI_Components/Main_Components/Skeleton_Loader/skeleton_loader_1.dart';
+import 'package:flutter_components_hub/Flutter_UI_Components/Main_Components/Skeleton_Loader/universal_loader.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,43 +10,48 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(title: const Text('Skeleton Loader Example')),
-        body: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: ListView.builder(
-            itemCount: 5,
-            itemBuilder: (context, index) {
-              return Padding(
-                padding: const EdgeInsets.only(bottom: 20.0),
-                child: SkeletonLoader(
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const SkeletonPlaceholder(
-                        width: 50.0,
-                        height: 50.0,
-                        borderRadius: 25.0, // For a circular shape
+        body: Center(
+          child: UniversalSkeletonLoader(
+            child: Padding(
+              padding: EdgeInsets.all(24.0),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  SkeletonPlaceholder(width: 200.0, height: 24.0),
+                  SizedBox(height: 16.0),
+                  SkeletonPlaceholder(width: double.infinity, height: 16.0),
+                  SizedBox(height: 8.0),
+                  SkeletonPlaceholder(width: double.infinity, height: 16.0),
+                  SizedBox(height: 8.0),
+                  SkeletonPlaceholder(width: 150.0, height: 16.0),
+                  SizedBox(height: 32.0),
+                  Row(
+                    children: <Widget>[
+                      SkeletonPlaceholder(
+                        width: 40.0,
+                        height: 40.0,
+                        borderRadius: 20.0,
                       ),
-                      const SizedBox(width: 16),
+                      SizedBox(width: 16.0),
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const SkeletonPlaceholder(width: 150),
-                            const SizedBox(height: 8),
-                            SkeletonPlaceholder(),
-                            const SizedBox(height: 8),
-                            const SkeletonPlaceholder(width: 120),
+                          children: <Widget>[
+                            SkeletonPlaceholder(width: 120.0, height: 14.0),
+                            SizedBox(height: 4.0),
+                            SkeletonPlaceholder(width: 80.0, height: 10.0),
                           ],
                         ),
                       ),
                     ],
                   ),
-                ),
-              );
-            },
+                ],
+              ),
+            ),
           ),
         ),
       ),
