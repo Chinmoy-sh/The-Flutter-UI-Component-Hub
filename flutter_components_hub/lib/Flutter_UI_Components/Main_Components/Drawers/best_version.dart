@@ -142,3 +142,95 @@ class _FullScreenSlidingDrawerState extends State<FullScreenSlidingDrawer>
     );
   }
 }
+
+
+
+// Usages
+
+// ///return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       // The MaterialApp itself cannot be const because its home widget (FullScreenSlidingDrawer)
+//       // is a StatefulWidget and thus not const.
+//       home: Scaffold(
+//         body: Center(
+//           child: FullScreenSlidingDrawer(
+//             key: drawerKey,
+//             mainContent: Scaffold(
+//               appBar: AppBar(
+//                 title: const Text('Custom Drawer UI'),
+//                 leading: IconButton(
+//                   icon: const Icon(Icons.menu),
+//                   onPressed: () {
+//                     // Call the _openDrawer method on the FullScreenSlidingDrawer's state.
+//                     drawerKey.currentState?._openDrawer();
+//                   },
+//                 ),
+//               ),
+//               body: const Center(
+//                 child: Padding(
+//                   padding: EdgeInsets.all(16.0),
+//                   child: Text(
+//                     'Tap the menu icon in the top left to reveal the custom sliding drawer. Tap outside the drawer to close it.',
+//                     textAlign: TextAlign.center,
+//                     style: TextStyle(fontSize: 18),
+//                   ),
+//                 ),
+//               ),
+//             ),
+//             drawerContent: Container(
+//               color: Colors.white,
+//               child: ListView(
+//                 // Do not add default padding from Scaffold for the drawer content
+//                 padding: EdgeInsets.zero,
+//                 children: <Widget>[
+//                   const DrawerHeader(
+//                     decoration: BoxDecoration(color: Colors.blue),
+//                     child: Align(
+//                       alignment: Alignment.bottomLeft,
+//                       child: Text(
+//                         'Drawer Menu',
+//                         style: TextStyle(color: Colors.white, fontSize: 24),
+//                       ),
+//                     ),
+//                   ),
+//                   ListTile(
+//                     leading: const Icon(Icons.home),
+//                     title: const Text('Home'),
+//                     onTap: () {
+//                       // Close the drawer when an item is tapped.
+//                       drawerKey.currentState?._closeDrawer();
+//                       // Add navigation logic here
+//                       // For example: Navigator.push(...);
+//                     },
+//                   ),
+//                   ListTile(
+//                     leading: const Icon(Icons.dashboard),
+//                     title: const Text('Dashboard'),
+//                     onTap: () {
+//                       drawerKey.currentState?._closeDrawer();
+//                       // Add navigation logic here
+//                     },
+//                   ),
+//                   ListTile(
+//                     leading: const Icon(Icons.settings),
+//                     title: const Text('Settings'),
+//                     onTap: () {
+//                       drawerKey.currentState?._closeDrawer();
+//                       // Add navigation logic here
+//                     },
+//                   ),
+//                   ListTile(
+//                     leading: const Icon(Icons.info),
+//                     title: const Text('About'),
+//                     onTap: () {
+//                       drawerKey.currentState?._closeDrawer();
+//                       // Add navigation logic here
+//                     },
+//                   ),
+//                 ],
+//               ),
+//             ),
+//           ),
+//         ),
+//       ),
+//     );
