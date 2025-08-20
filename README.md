@@ -13,6 +13,8 @@
 
 - #### Code Quality: Each widget is written with clean, well-commented code to ensure it's easy to understand and integrate
 
-Consistent Design: Components are designed with a cohesive style in mind, helping to maintain a consistent look and feel across different apps.
+#### Consistent Design: Components are designed with a cohesive style in mind, helping to maintain a consistent look and feel across different apps.<br>
+===
+##### Thank you
 
 >>>>>>> 522f4d35e43601921bbca6bdddc9d3c748226713
