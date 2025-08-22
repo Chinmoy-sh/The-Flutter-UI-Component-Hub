@@ -11,8 +11,17 @@
 
 - #### Organized Structure: Components are organized into clear directories, making them easy to find and import
 
-- #### Code Quality: Each widget is written with clean, well-commented code to ensure it's easy to understand and integrate
-
+- #### Code Quality: Each widget is written with clean, well-commented code to ensure it's easy to understand and integrate<br>
+<br>
+## How to use:<br>
+### 1.
+### 1.
+### 1.
+### 1.
+### 1.
+### 1.
+### 1.
+### 1.
 #### Consistent Design: Components are designed with a cohesive style in mind, helping to maintain a consistent look and feel across different apps.<br>
 
 ##### Thank you
