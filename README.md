@@ -5,7 +5,7 @@
 
 ### The goal is to save time and effort by having a robust set of widgets that can be easily dropped into any new or existing Flutter project.
 
-## Key Features
+## 💡Key Features
 
 - #### Reusable Widgets: A wide variety of widgets, from simple buttons and cards to complex layouts and custom animations
 
