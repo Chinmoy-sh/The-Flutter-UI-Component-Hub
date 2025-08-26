@@ -143,94 +143,102 @@ class _FullScreenSlidingDrawerState extends State<FullScreenSlidingDrawer>
   }
 }
 
-
-
 // Usages
 
-// ///return MaterialApp(
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
 //       debugShowCheckedModeBanner: false,
-//       // The MaterialApp itself cannot be const because its home widget (FullScreenSlidingDrawer)
-//       // is a StatefulWidget and thus not const.
-//       home: Scaffold(
-//         body: Center(
-//           child: FullScreenSlidingDrawer(
-//             key: drawerKey,
-//             mainContent: Scaffold(
-//               appBar: AppBar(
-//                 title: const Text('Custom Drawer UI'),
-//                 leading: IconButton(
-//                   icon: const Icon(Icons.menu),
-//                   onPressed: () {
-//                     // Call the _openDrawer method on the FullScreenSlidingDrawer's state.
-//                     drawerKey.currentState?._openDrawer();
-//                   },
-//                 ),
-//               ),
-//               body: const Center(
-//                 child: Padding(
-//                   padding: EdgeInsets.all(16.0),
-//                   child: Text(
-//                     'Tap the menu icon in the top left to reveal the custom sliding drawer. Tap outside the drawer to close it.',
-//                     textAlign: TextAlign.center,
-//                     style: TextStyle(fontSize: 18),
-//                   ),
-//                 ),
+//       home: FullScreenSlidingDrawer(
+//         mainContentBuilder: (context, openDrawer, closeDrawer) {
+//           return Scaffold(
+//             appBar: AppBar(
+//               title: const Text('Custom UI Drawer'),
+//               leading: IconButton(
+//                 icon: const Icon(Icons.menu),
+//                 onPressed: openDrawer,
 //               ),
 //             ),
-//             drawerContent: Container(
-//               color: Colors.white,
-//               child: ListView(
-//                 // Do not add default padding from Scaffold for the drawer content
-//                 padding: EdgeInsets.zero,
+//             body: Center(
+//               child: Column(
+//                 mainAxisAlignment: MainAxisAlignment.center,
 //                 children: <Widget>[
-//                   const DrawerHeader(
-//                     decoration: BoxDecoration(color: Colors.blue),
-//                     child: Align(
-//                       alignment: Alignment.bottomLeft,
-//                       child: Text(
-//                         'Drawer Menu',
-//                         style: TextStyle(color: Colors.white, fontSize: 24),
-//                       ),
-//                     ),
+//                   const Text(
+//                     'Welcome to the Custom UI App!',
+//                     style: TextStyle(fontSize: 20),
 //                   ),
-//                   ListTile(
-//                     leading: const Icon(Icons.home),
-//                     title: const Text('Home'),
-//                     onTap: () {
-//                       // Close the drawer when an item is tapped.
-//                       drawerKey.currentState?._closeDrawer();
-//                       // Add navigation logic here
-//                       // For example: Navigator.push(...);
-//                     },
+//                   const SizedBox(height: 20),
+//                   ElevatedButton.icon(
+//                     onPressed: openDrawer,
+//                     icon: const Icon(Icons.menu_open),
+//                     label: const Text('Open Drawer'),
 //                   ),
-//                   ListTile(
-//                     leading: const Icon(Icons.dashboard),
-//                     title: const Text('Dashboard'),
-//                     onTap: () {
-//                       drawerKey.currentState?._closeDrawer();
-//                       // Add navigation logic here
-//                     },
-//                   ),
-//                   ListTile(
-//                     leading: const Icon(Icons.settings),
-//                     title: const Text('Settings'),
-//                     onTap: () {
-//                       drawerKey.currentState?._closeDrawer();
-//                       // Add navigation logic here
-//                     },
-//                   ),
-//                   ListTile(
-//                     leading: const Icon(Icons.info),
-//                     title: const Text('About'),
-//                     onTap: () {
-//                       drawerKey.currentState?._closeDrawer();
-//                       // Add navigation logic here
-//                     },
+//                   const SizedBox(height: 10),
+//                   ElevatedButton.icon(
+//                     onPressed: closeDrawer,
+//                     icon: const Icon(Icons.close),
+//                     label: const Text('Close Drawer'),
 //                   ),
 //                 ],
 //               ),
 //             ),
-//           ),
-//         ),
+//           );
+//         },
+//         drawerContentBuilder: (context, closeDrawer) {
+//           return ListView(
+//             padding: EdgeInsets.zero,
+//             children: <Widget>[
+//               UserAccountsDrawerHeader(
+//                 accountName: const Text('Flutter User'),
+//                 accountEmail: const Text('user@example.com'),
+//                 currentAccountPicture: const CircleAvatar(
+//                   backgroundColor: Colors.white,
+//                   child: Icon(Icons.person, color: Colors.blueAccent),
+//                 ),
+//                 decoration: BoxDecoration(
+//                   color: Theme.of(context).primaryColor,
+//                 ),
+//               ),
+//               ListTile(
+//                 leading: const Icon(Icons.dashboard),
+//                 title: const Text('Dashboard'),
+//                 onTap: () {
+//                   // Perform action
+//                   closeDrawer(); // Close drawer after selection
+//                 },
+//               ),
+//               ListTile(
+//                 leading: const Icon(Icons.notifications),
+//                 title: const Text('Notifications'),
+//                 onTap: () {
+//                   // Perform action
+//                   closeDrawer();
+//                 },
+//               ),
+//               ListTile(
+//                 leading: const Icon(Icons.settings),
+//                 title: const Text('Settings'),
+//                 onTap: () {
+//                   // Perform action
+//                   closeDrawer();
+//                 },
+//               ),
+//               const Divider(),
+//               ListTile(
+//                 leading: const Icon(Icons.exit_to_app),
+//                 title: const Text('Logout'),
+//                 onTap: () {
+//                   // Perform action
+//                   closeDrawer();
+//                 },
+//               ),
+//             ],
+//           );
+//         },
 //       ),
 //     );
+//   }
+// }
