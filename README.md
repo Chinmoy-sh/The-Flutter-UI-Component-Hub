@@ -21,7 +21,7 @@
 #### 3. You will find the non-animated contents like buttons, cards, drawers, footers etc in this folder. Just navigate to your prefered folder and then choose the styles of it according to the dart files<br>
 #### 4. You will find hte animated contents like the activity progress, animated buttons, switches etc in this folder. Just navigate to you prefered folder and then choose the styles of it according to the dart files<br>
 
-### </> Consistent Design: Components are designed with a cohesive style in mind, helping to maintain a consistent look and feel across different apps.<br>
+## </> Consistent Design: Components are designed with a cohesive style in mind, helping to maintain a consistent look and feel across different apps.<br>
 
 ## 🤝 Contribution
 
