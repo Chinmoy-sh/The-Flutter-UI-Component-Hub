@@ -25,7 +25,7 @@ class _CustomSwitchState extends State<CustomSwitch> {
     return Switch(
       value: widget.value,
       onChanged: widget.onChanged,
-      activeColor: widget.activeColor,
+      activeThumbColor: widget.activeColor,
       // ignore: deprecated_member_use
       inactiveTrackColor: widget.inactiveColor.withOpacity(0.5),
       inactiveThumbColor: widget.inactiveColor,
