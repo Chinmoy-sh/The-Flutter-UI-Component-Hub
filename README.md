@@ -1,4 +1,3 @@
-
 # 📱 The Flutter UI Component Hub
 
 ## 👋 Welcome to The Flutter UI Component Hub, a rich collection of reusable UI components and custom animated and non-animated widgets for Flutter. This repository is a go-to resource for accelerating app development by providing a central library of high-quality, pre-built components.
