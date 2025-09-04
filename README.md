@@ -29,4 +29,6 @@ While this is a personal repository, I am always open to feedback. If you find a
 
 ##### Thank you.
 
->>>>>>> 522f4d35e43601921bbca6bdddc9d3c748226713
+>>>>>>> 522f4d35e43601921bbca6bdddc9d3c748226713<br>
+![Alt text for the image](https://www.example.com/path/to/your-image.png)
+
