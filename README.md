@@ -11,8 +11,12 @@ High-quality, reusable, and animated Flutter UI components to build beautiful ap
 
 ---
 
-![Sticker 1](flutter_components_hub/assets/images/Instagram_Glyph_Gradient.png)
-![Sticker 2](flutter_components_hub/assets/images/icons8-google-55.png)
+<!-- markdownlint-disable MD033 -->
+<p align="center">
+  <img src="flutter_components_hub/assets/images/Instagram_Glyph_Gradient.png" alt="Instagram Logo" height="64" />
+  <img src="flutter_components_hub/assets/images/icons8-google-55.png" alt="Google Logo" height="64" />
+</p>
+<!-- markdownlint-enable MD033 -->
 ![Sticker 3](flutter_components_hub/assets/images/Search_GSA.original.png)
 
 > Fun stickers from the assets to brighten your day ✨
