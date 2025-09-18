@@ -1,16 +1,16 @@
-# flutter_components_hub
+# Flutter Components Hub – Demo App
 
-A new Flutter project.
+This is the showcase app for the UI components in this repository.
 
-## Getting Started
+- Browse non-animated widgets under `lib/Flutter_UI_Components/Main_Components`
+- Browse animated widgets under `lib/Flutter_UI_Components/Animated_Components`
 
-This project is a starting point for a Flutter application.
+For project overview, usage, and contribution guidelines, see the root
+[README](../README.md).
 
-A few resources to get you started if this is your first Flutter project:
+## Run locally
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```powershell
+flutter pub get
+flutter run
+```
