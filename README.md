@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/flutter/brand-guidelines/main/logo/PNG/Flutter_logo_RGB.png" alt="Flutter" width="20" height="20" /> The Flutter UI Component Hub
+# 📱 The Flutter UI Component Hub
 
 High-quality, reusable, and animated Flutter UI components to build beautiful apps faster.
 
