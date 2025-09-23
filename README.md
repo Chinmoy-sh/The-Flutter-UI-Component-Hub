@@ -14,6 +14,8 @@ High-quality, reusable, and animated Flutter UI components to build beautiful ap
 <!-- markdownlint-disable MD033 -->
 <p align="center">
   <img src="flutter_components_hub/assets/images/Instagram_Glyph_Gradient.png" alt="Instagram Logo" height="64" />
+
+  
   <img src="flutter_components_hub/assets/images/Search_GSA.original.png" alt="Google Logo" height="64" />
 </p>
 <!-- markdownlint-enable MD033 -->
