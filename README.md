@@ -122,4 +122,5 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 ---
 
-If this project saves you time, consider giving it a ⭐️. It helps a lot! Thank you.
+If this project saves you time, consider giving it a ⭐️. It helps a lot! <br>
+Thank you.
