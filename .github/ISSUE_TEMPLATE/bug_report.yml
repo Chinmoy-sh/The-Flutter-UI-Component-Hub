@@ -1,0 +1,90 @@
+name: Bug Report
+description: Report a bug in the Flutter UI Component Hub
+title: "[BUG] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out this form as completely as possible.
+        
+  - type: input
+    id: component
+    attributes:
+      label: Component Name
+      description: Which component is affected?
+      placeholder: e.g., CustomButton, AnimatedCard, etc.
+    validations:
+      required: true
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Describe what happened...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      placeholder: Describe what you expected...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Steps to reproduce the behavior
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See error
+    validations:
+      required: true
+      
+  - type: textarea
+    id: code
+    attributes:
+      label: Code Sample
+      description: Minimal code sample that reproduces the issue
+      render: dart
+      placeholder: |
+        Widget build(BuildContext context) {
+          return ComponentName(
+            // your code here
+          );
+        }
+        
+  - type: input
+    id: flutter-version
+    attributes:
+      label: Flutter Version
+      description: Run `flutter --version` and paste the first line
+      placeholder: e.g., Flutter 3.24.1
+    validations:
+      required: true
+      
+  - type: checkboxes
+    id: platforms
+    attributes:
+      label: Platforms Affected
+      description: Which platforms show this bug?
+      options:
+        - label: Android
+        - label: iOS
+        - label: Web
+        - label: Windows
+        - label: macOS
+        - label: Linux
+        
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here, including screenshots
+      placeholder: Add any additional information...
