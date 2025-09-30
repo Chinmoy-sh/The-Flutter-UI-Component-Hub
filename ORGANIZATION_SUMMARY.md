@@ -6,7 +6,7 @@ I've transformed your Flutter UI Component Hub into a **professional, industry-s
 
 ### 🏗️ Professional Project Structure
 
-text
+
 The-Flutter-UI-Component-Hub/
 ├── .github/                    # GitHub automation & templates
 │   ├── workflows/              # CI/CD pipelines
