@@ -14,12 +14,20 @@ High-quality, reusable, and animated Flutter UI components to build beautiful ap
 <!-- markdownlint-disable MD033 -->
 <p align="center">
   <img src="flutter_components_hub/assets/images/Instagram_Glyph_Gradient.png" alt="Instagram Logo" height="64" />
+<<<<<<< Updated upstream
 
   
   <img src="flutter_components_hub/assets/images/Search_GSA.original.png" alt="Google Logo" height="64" />
+=======
+  <img src="flutter_components_hub/assets/images/icons8-google-55.png" alt="Google Logo" height="64" />
+  <img src="flutter_components_hub/assets/images/Search_GSA.original.png" alt="Search Icon" height="64" />
+>>>>>>> Stashed changes
 </p>
 <!-- markdownlint-enable MD033 -->
-> Fun stickers from the assets to brighten your day ✨
+
+> ✨ **Live Demo**: [View Components in Action](https://chinmoy-sh.github.io/The-Flutter-UI-Component-Hub/)
+
+🎯 **Professional Repository**: Complete with CI/CD, documentation, and contribution guidelines
 
 ## Overview
 
@@ -109,12 +117,48 @@ Built with Flutter — runs on:
 
 ## Contributing
 
-Contributions, ideas, and improvements are welcome! Feel free to:
+We welcome contributions from the community! This project follows professional development practices:
 
-- Open an issue for bugs or feature requests
-- Submit a pull request with enhancements
+- 📋 **Issues**: Use our issue templates for bugs and feature requests
+- 🔄 **Pull Requests**: Follow our PR template and guidelines
+- 📖 **Documentation**: Comprehensive contribution guide available
+- 🧪 **Testing**: Automated CI/CD pipeline for quality assurance
+- 📝 **Code Style**: Consistent formatting and linting rules
 
-Please keep components focused, reusable, and well-documented.
+See our [Contributing Guide](CONTRIBUTING.md) for detailed instructions.
+
+## Community & Support
+
+- 📚 **Documentation**: [Complete component docs](docs/)
+- 🐛 **Bug Reports**: [Issue tracker](https://github.com/Chinmoy-sh/The-Flutter-UI-Component-Hub/issues)
+- 💡 **Feature Requests**: [Enhancement proposals](https://github.com/Chinmoy-sh/The-Flutter-UI-Component-Hub/issues/new?template=feature_request.yml)
+- 🔒 **Security**: [Security policy](SECURITY.md)
+- 📜 **Code of Conduct**: [Community guidelines](CODE_OF_CONDUCT.md)
+
+## Development Workflow
+
+This repository uses professional development practices:
+
+```bash
+# Setup development environment
+git clone https://github.com/Chinmoy-sh/The-Flutter-UI-Component-Hub.git
+cd The-Flutter-UI-Component-Hub/flutter_components_hub
+flutter pub get
+
+# Run tests
+flutter test
+
+# Format code
+dart format .
+
+# Analyze code
+flutter analyze
+
+# Build for different platforms
+flutter build apk        # Android
+flutter build web        # Web
+flutter build windows    # Windows
+```
 
 ## License
 
