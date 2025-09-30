@@ -251,8 +251,6 @@ class StarClipper extends CustomClipper<Rect> {
   }
 }
 
-
-
 // Usages
 //  ElevatedButton(
 //               onPressed: () {
