@@ -1,0 +1,88 @@
+name: Feature Request
+description: Suggest a new component or feature for the Flutter UI Component Hub
+title: "[FEATURE] "
+labels: ["enhancement", "needs-discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a new feature! Please provide as much detail as possible.
+        
+  - type: input
+    id: component-name
+    attributes:
+      label: Component/Feature Name
+      description: What would you like to call this component or feature?
+      placeholder: e.g., GradientButton, SlideAnimation, etc.
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Where should this component belong?
+      options:
+        - Main Components (Static UI)
+        - Animated Components 
+        - Utility/Helper
+        - Documentation
+        - Tooling/Developer Experience
+        - Other
+    validations:
+      required: true
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature Description
+      description: A clear description of what you want to happen
+      placeholder: Describe the component/feature you'd like to see...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: Describe the problem this solves or the use case it enables
+      placeholder: This would be useful when...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: api-design
+    attributes:
+      label: Proposed API Design
+      description: How do you imagine using this component? (optional)
+      render: dart
+      placeholder: |
+        ComponentName(
+          property1: value1,
+          property2: value2,
+          onAction: () => {},
+        )
+        
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: What alternatives have you considered?
+      placeholder: Describe any alternative solutions or features you've considered...
+      
+  - type: checkboxes
+    id: implementation
+    attributes:
+      label: Implementation
+      description: Are you willing to help implement this feature?
+      options:
+        - label: I'd like to implement this feature myself
+        - label: I can provide guidance/feedback during implementation
+        - label: I'm just suggesting the idea
+        
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context, mockups, or screenshots about the feature request
+      placeholder: Add any additional information, links to similar implementations, etc.
