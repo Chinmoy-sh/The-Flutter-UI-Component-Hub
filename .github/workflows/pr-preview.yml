@@ -1,0 +1,44 @@
+name: PR Preview Deploy
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [ main ]
+
+jobs:
+  deploy-preview:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.24.1'
+        
+    - name: Install dependencies
+      working-directory: ./flutter_components_hub
+      run: flutter pub get
+      
+    - name: Build Web for Preview
+      working-directory: ./flutter_components_hub
+      run: flutter build web --base-href="/The-Flutter-UI-Component-Hub/pr-${{ github.event.number }}/"
+      
+    - name: Deploy PR Preview
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./flutter_components_hub/build/web
+        destination_dir: pr-${{ github.event.number }}
+        
+    - name: Comment PR
+      uses: actions/github-script@v6
+      with:
+        script: |
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: '🚀 PR Preview deployed! View at: https://${{ github.repository_owner }}.github.io/The-Flutter-UI-Component-Hub/pr-${{ github.event.number }}/'
+          })
