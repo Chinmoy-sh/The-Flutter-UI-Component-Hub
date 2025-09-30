@@ -16,7 +16,6 @@ High-quality, reusable, and animated Flutter UI components to build beautiful ap
   <img src="flutter_components_hub/assets/images/Instagram_Glyph_Gradient.png" alt="Instagram Logo" height="64" />
 <<<<<<< Updated upstream
 
-  
   <img src="flutter_components_hub/assets/images/Search_GSA.original.png" alt="Google Logo" height="64" />
 =======
   <img src="flutter_components_hub/assets/images/icons8-google-55.png" alt="Google Logo" height="64" />
@@ -166,5 +165,6 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 ---
 
-If this project saves you time, consider giving it a ⭐️. It helps a lot! <br>
-Thank you.
+If this project saves you time, consider giving it a ⭐️. It helps a lot!
+
+Thank you for using Flutter UI Component Hub! 🚀
