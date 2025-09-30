@@ -1,5 +1,8 @@
 name: flutter_components_hub
-description: "A new Flutter project."
+description: "A comprehensive collection of reusable Flutter UI components and animations for rapid app development."
+homepage: "https://github.com/Chinmoy-sh/The-Flutter-UI-Component-Hub"
+repository: "https://github.com/Chinmoy-sh/The-Flutter-UI-Component-Hub"
+issue_tracker: "https://github.com/Chinmoy-sh/The-Flutter-UI-Component-Hub/issues"
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
