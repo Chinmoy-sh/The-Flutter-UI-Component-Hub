@@ -395,3 +395,4 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 If this project saves you time, consider sharing it among the developers and giving it a ⭐️. It helps a lot!
 
 Thank you for using The Flutter UI Component Hub! 🚀
+
