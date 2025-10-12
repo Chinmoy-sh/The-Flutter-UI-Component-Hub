@@ -1,6 +1,6 @@
 # 🎨 The Flutter UI Component Hub
 
-> A professional, production-ready collection of reusable Flutter UI components and animations
+> A professional, production-ready and structured collection of reusable Flutter UI components and animations that will help you developing complex and large apps
 
 [![Build Status](https://img.shields.io/github/actions/workflow/status/Chinmoy-sh/The-Flutter-UI-Component-Hub/flutter-ci.yml?branch=main&logo=github&logoColor=white&label=Build)](https://github.com/Chinmoy-sh/The-Flutter-UI-Component-Hub/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-0ea5e9.svg?logo=opensourceinitiative&logoColor=white)](LICENSE)
