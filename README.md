@@ -1,4 +1,4 @@
-# 🎨 Flutter UI Component Hub
+# 🎨 The Flutter UI Component Hub
 
 > A professional, production-ready collection of reusable Flutter UI components and animations
 
